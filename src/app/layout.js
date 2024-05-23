@@ -1,6 +1,6 @@
 import "./globals.css";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "../components/ui/Header";
+import Footer from "../components/ui/Footer";
 import {
   // Balsamiq_Sans,
   Montserrat_Alternates
@@ -19,18 +19,18 @@ const gfmon = Montserrat_Alternates({
 
 export const metadata = {
   title: "1001 Eventos",
-  description: "Empresa de producao e coordenacao de eventos"
+  description: "Empresa de producao e coordenacao de eventos no Brasil"
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="pt">
       <body className={`bg-myellow $ text-mblack ${gfmon.className} `}>
-        <section className="flex flex-col h-screen justify-between">
-          <section>
+        <section className="flex flex-col  h-screen justify-between w-full">
+          <section className="bg-mblack flex w-full h-[110px] fixed z-50 border-b-2 border-myellow">
             <Header />
           </section>
-          <section className={` `}>
+          <section className={``}>
             <section>{children}</section>
           </section>
           <section>

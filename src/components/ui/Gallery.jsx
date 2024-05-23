@@ -39,8 +39,10 @@ const eventos = [
 
 const Gallery = () => {
   return (
-    <section className="container">
-      <p className={` ${gfrib.className}`}>Nossa galeria de fotos</p>
+    <section className="container pt-[150px]">
+      <p className={`text-3xl font-bold mb-8 ${gfrib.className}`}>
+        Nossa galeria de fotos
+      </p>
       <section className="flex flex-wrap  mx-auto justify-center">
         {eventos.map((evento, index) => (
           <article key={index} aria-label="Related Image">

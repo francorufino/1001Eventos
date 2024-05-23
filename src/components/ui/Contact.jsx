@@ -28,10 +28,12 @@ const gfrib = Ribeye_Marrow({
 
 export function Contact() {
   return (
-    <section className="container">
+    <section className="container pt-[150px]">
       <section className="flex h-screen">
+        <p className={`text-3xl font-bold mb-8 ${gfrib.className}`}>
+          Entre em contato
+        </p>
         <section className="flex-1 flex items-center justify-center p-10">
-          <p className={` ${gfrib.className}`}>Entre em contato</p>
           <p className={` ${gfrib.className}`}>Entre em contato</p>
           <section className="font-extrabold text-6xl text-center">
             <h1>teste</h1>

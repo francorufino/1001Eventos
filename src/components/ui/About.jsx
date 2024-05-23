@@ -10,9 +10,11 @@ const gfrib = Ribeye_Marrow({
 
 const About = () => {
   return (
-    <section>
+    <section className="pt-[150px]">
       <section className="container">
-        <p className={` ${gfrib.className}`}>Quem somos</p>
+        <p className={`text-3xl font-bold mb-8 ${gfrib.className}`}>
+          Quem somos
+        </p>
         <article>
           <p>
             Nós somos uma empresa líder na produção e coordenação de eventos no
