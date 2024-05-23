@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <section>
       <section
-        className={`bg-mblack text-mwhite p-8 flex justify-center text-center mt-8 ${gfrib.className}`}
+        className={`bg-mblack text-mwhite p-8 flex justify-center text-center  ${gfrib.className}`}
       >
         <p className="container">
           1001 EVENTOS - Todos os direitos reservados - {currentYear}

@@ -24,11 +24,11 @@ export default function Home() {
       <section id="services">
         <Servicos />
       </section>
-      <section id="contact" className="text-mwhite bg-mblack">
-        <Contact />
-      </section>
-      <section id="gallery">
+      <section id="gallery" className="text-mwhite bg-mblack">
         <Gallery />
+      </section>
+      <section id="contact">
+        <Contact />
       </section>
     </main>
   );

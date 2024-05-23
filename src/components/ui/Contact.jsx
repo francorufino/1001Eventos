@@ -1,24 +1,18 @@
 import * as React from "react";
-
+import Link from "next/link";
+import Image from "next/image"; // Correct import for Image
 import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue
-} from "@/components/ui/select";
 import { Ribeye_Marrow } from "next/font/google";
+import { Textarea } from "@/components/ui/textarea";
 
 const gfrib = Ribeye_Marrow({
   subsets: ["latin"],
@@ -29,56 +23,59 @@ const gfrib = Ribeye_Marrow({
 export function Contact() {
   return (
     <section className="container pt-[150px]">
-      <section className="flex h-screen">
-        <p className={`text-3xl font-bold mb-8 ${gfrib.className}`}>
-          Entre em contato
-        </p>
-        <section className="flex-1 flex items-center justify-center p-10">
-          <p className={` ${gfrib.className}`}>Entre em contato</p>
-          <section className="font-extrabold text-6xl text-center">
-            <h1>teste</h1>
-            <h1>teste</h1>
-          </section>
+      <p className={`text-3xl font-bold mb-8 ${gfrib.className}`}>
+        Entre em contato
+      </p>
+      <section className="flex">
+        <section className="flex-1 justify-center flex ">
+          <Image
+            src={"/contato/phone1.png"}
+            alt="whatsapp icon"
+            width={300}
+            height={100}
+          />
         </section>
-        <section className="flex-1 relative h-screen">
+        <section className="flex-1 flex mb-12">
           <Card className="w-[350px]">
             <CardHeader>
-              <CardTitle>Create project</CardTitle>
-              <CardDescription>
-                Deploy your new project in one-click.
-              </CardDescription>
+              <CardTitle>Envie um e-mail pra gente!</CardTitle>
             </CardHeader>
             <CardContent>
-              <form>
-                <section className="grid w-full items-center gap-4">
-                  <section className="flex flex-col space-y-1.5">
-                    <Label htmlFor="name">Name</Label>
-                    <Input id="name" placeholder="Name of your project" />
-                  </section>
-                  <section className="flex flex-col space-y-1.5">
-                    <Label htmlFor="framework">Framework</Label>
-                    <Select>
-                      <SelectTrigger id="framework">
-                        <SelectValue placeholder="Select" />
-                      </SelectTrigger>
-                      <SelectContent position="popper">
-                        <SelectItem value="next">Next.js</SelectItem>
-                        <SelectItem value="sveltekit">SvelteKit</SelectItem>
-                        <SelectItem value="astro">Astro</SelectItem>
-                        <SelectItem value="nuxt">Nuxt.js</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </section>
-                </section>
-              </form>
+              <section className="grid w-full  gap-4">
+                <div className="flex flex-col space-y-1.5">
+                  <Label htmlFor="name">Nome</Label>
+                  <Input id="name" placeholder="Digite seu nome" />
+                </div>
+                <div className="flex flex-col space-y-1.5">
+                  <Label htmlFor="email">E-mail</Label>
+                  <Input id="email" placeholder="Digite seu e-mail" />
+                </div>
+                <div className="flex flex-col space-y-1.5">
+                  <Label htmlFor="mensagem">Mensagem</Label>
+                  <Textarea id="mensagem" placeholder="Digite sua mensagem" />
+                </div>
+              </section>
             </CardContent>
-            <CardFooter className="flex justify-between">
-              <Button variant="outline">Cancel</Button>
-              <Button>Deploy</Button>
+            <CardFooter className="flex justify-center">
+              <Button>Enviar</Button>
             </CardFooter>
           </Card>
+          <section className="flex-1 flex flex-col p-10">
+            <div className="font-extrabold text-xl text-center">
+              <p>Prefere enviar um "Zap"?</p> {/* Correct nesting */}
+            </div>
+            <div className="flex justify-center mt-8">
+              <Link href="#herosection">
+                <Image
+                  src={"/icons/icons8-whatsapp-480.png"}
+                  alt="whatsapp icon"
+                  width={50}
+                  height={50}
+                />
+              </Link>
+            </div>
+          </section>
         </section>
-        <section />
       </section>
     </section>
   );

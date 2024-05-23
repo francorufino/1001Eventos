@@ -39,7 +39,7 @@ const eventos = [
 
 const Gallery = () => {
   return (
-    <section className="container pt-[150px]">
+    <section className="container pt-[50px]">
       <p className={`text-3xl font-bold mb-8 ${gfrib.className}`}>
         Nossa galeria de fotos
       </p>

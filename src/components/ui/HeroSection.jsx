@@ -10,20 +10,28 @@ const gfrib = Ribeye_Marrow({
 
 const HeroSection = () => {
   return (
-    <section className="container mt-[200px] flex justify-between">
-      <section className={`text-6xl  flex flex-col ${gfrib.className}`}>
-        <p>Experiencias únicas</p>
-        <p>Eventos expepcionais</p>
+    <>
+      <section id="herosection" className="mt-[150px]">
+        <section className="container justify-between items-center flex">
+          <section
+            className={`text-6xl flex my-auto flex-col  ${gfrib.className}`}
+          >
+            <p>Experiencias únicas</p>
+            <p>Eventos expepcionais</p>
+          </section>
+
+          <section className="flex-shrink-0   ">
+            <Image
+              src="/herosection/1001Herosection.png"
+              alt="Dancing "
+              width={500}
+              height={50}
+              className="flex justify-end"
+            />
+          </section>
+        </section>
       </section>
-      <section className="flex-shrink-0  flex mr-12 ">
-        <Image
-          src={"/icons/spotlight.png"}
-          width={300}
-          height={300}
-          className="text-mblack flex "
-        />
-      </section>
-    </section>
+    </>
   );
 };
 

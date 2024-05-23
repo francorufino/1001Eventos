@@ -27,14 +27,26 @@ const Header = () => {
           <Link href="#services">
             <span className="ml-8 hover:text-myellow">Serviços</span>
           </Link>
-          <Link href="#contact">
-            <span className="ml-8 hover:text-myellow">Contato</span>
-          </Link>
+
           <Link href="#gallery">
             <span className="ml-8 hover:text-myellow">Galeria</span>
           </Link>
+          <Link href="#contact">
+            <span className="ml-8 hover:text-myellow">Contato</span>
+          </Link>
           <Link href="#login">
             <span className="ml-8 hover:text-myellow">Login</span>
+          </Link>
+        </section>
+        <section>
+          {" "}
+          <Link href="#herosection">
+            <Image
+              src={"/icons/icons8-whatsapp-64.svg"}
+              alt="whatsapp icon"
+              width={50}
+              height={50}
+            />
           </Link>
         </section>
       </nav>
