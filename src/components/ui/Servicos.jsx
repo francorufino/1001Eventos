@@ -30,10 +30,10 @@ const Servicos = () => {
       <section className="text-center justify-center gap-4">
         <section
           aria-label="icones dos serviços prestados"
-          className="flex justify-center gap-8 mb-8"
+          className="flex flex-wrap justify-center gap-8 mb-8"
         >
           <article aria-label="icones dos serviços prestados">
-            <Card className="w-[350px] flex justify-center flex-col text-center">
+            <Card className="w-[300px] flex justify-center flex-col text-center">
               <CardHeader>
                 <CardTitle>Transporte</CardTitle>
                 <CardDescription>
@@ -55,7 +55,7 @@ const Servicos = () => {
           </article>
 
           <article aria-label="icones dos serviços prestados">
-            <Card className="w-[350px] flex justify-center flex-col text-center">
+            <Card className="w-[300px] flex justify-center flex-col text-center">
               <CardHeader>
                 <CardTitle>Segurança</CardTitle>
                 <CardDescription>
@@ -78,7 +78,7 @@ const Servicos = () => {
           </article>
 
           <article aria-label="icones dos serviços prestados">
-            <Card className="w-[350px] flex justify-center flex-col text-center">
+            <Card className="w-[300px] flex justify-center flex-col text-center">
               <CardHeader>
                 <CardTitle>Produção</CardTitle>
                 <CardDescription>
@@ -100,13 +100,9 @@ const Servicos = () => {
               </section>
             </Card>
           </article>
-        </section>
-        <section
-          aria-label="icones dos serviços prestados"
-          className="flex justify-center gap-8 mb-8"
-        >
+
           <article aria-label="icones dos serviços prestados">
-            <Card className="w-[350px] flex justify-center flex-col text-center">
+            <Card className="w-[300px] flex justify-center flex-col text-center">
               <CardHeader>
                 <CardTitle>Controle</CardTitle>
                 <CardDescription>
@@ -128,7 +124,7 @@ const Servicos = () => {
           </article>
 
           <article aria-label="icones dos serviços prestados">
-            <Card className="w-[350px] flex justify-center flex-col text-center">
+            <Card className="w-[300px] flex justify-center flex-col text-center">
               <CardHeader>
                 <CardTitle>Outro Serviço</CardTitle>
                 <CardDescription>Descricao do outro serviço</CardDescription>
@@ -147,7 +143,7 @@ const Servicos = () => {
           </article>
 
           <article aria-label="icones dos serviços prestados">
-            <Card className="w-[350px] flex justify-center flex-col text-center">
+            <Card className="w-[300px] flex justify-center flex-col text-center">
               <CardHeader>
                 <CardTitle>Outro serviço</CardTitle>
                 <CardDescription>Descricao do outro serviço</CardDescription>

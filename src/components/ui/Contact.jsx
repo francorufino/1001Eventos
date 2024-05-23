@@ -26,8 +26,25 @@ export function Contact() {
       <p className={`text-3xl font-bold mb-8 ${gfrib.className}`}>
         Entre em contato
       </p>
-      <section className="flex">
-        <section className="flex-1 justify-center flex ">
+
+      <section className="flex flex-wrap justify-center">
+        <section className="flex flex-col justify-center text-center">
+          <section>
+            {" "}
+            <p>Envie um "Zap"!</p>
+          </section>
+          <section className="flex justify-center ">
+            <Link href="#herosection">
+              <Image
+                src={"/icons/icons8-whatsapp-480.png"}
+                alt="whatsapp icon"
+                width={50}
+                height={50}
+              />
+            </Link>
+          </section>
+        </section>
+        <section>
           <Image
             src={"/contato/phone1.png"}
             alt="whatsapp icon"
@@ -35,46 +52,31 @@ export function Contact() {
             height={100}
           />
         </section>
-        <section className="flex-1 flex mb-12">
-          <Card className="w-[350px]">
+        <section>
+          <Card className="w-[350px] -mt-8">
             <CardHeader>
               <CardTitle>Envie um e-mail pra gente!</CardTitle>
             </CardHeader>
             <CardContent>
               <section className="grid w-full  gap-4">
-                <div className="flex flex-col space-y-1.5">
+                <section className="flex flex-col space-y-1.5">
                   <Label htmlFor="name">Nome</Label>
                   <Input id="name" placeholder="Digite seu nome" />
-                </div>
-                <div className="flex flex-col space-y-1.5">
+                </section>
+                <section className="flex flex-col space-y-1.5">
                   <Label htmlFor="email">E-mail</Label>
                   <Input id="email" placeholder="Digite seu e-mail" />
-                </div>
-                <div className="flex flex-col space-y-1.5">
+                </section>
+                <section className="flex flex-col space-y-1.5">
                   <Label htmlFor="mensagem">Mensagem</Label>
                   <Textarea id="mensagem" placeholder="Digite sua mensagem" />
-                </div>
+                </section>
               </section>
             </CardContent>
             <CardFooter className="flex justify-center">
               <Button>Enviar</Button>
             </CardFooter>
           </Card>
-          <section className="flex-1 flex flex-col p-10">
-            <div className="font-extrabold text-xl text-center">
-              <p>Prefere enviar um "Zap"?</p> {/* Correct nesting */}
-            </div>
-            <div className="flex justify-center mt-8">
-              <Link href="#herosection">
-                <Image
-                  src={"/icons/icons8-whatsapp-480.png"}
-                  alt="whatsapp icon"
-                  width={50}
-                  height={50}
-                />
-              </Link>
-            </div>
-          </section>
         </section>
       </section>
     </section>

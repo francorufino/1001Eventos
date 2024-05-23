@@ -24,11 +24,11 @@ const HeroSection = () => {
       <section
         className={`relative z-10 flex flex-col items-center justify-center h-full text-white ${gfrib.className}`}
       >
-        <p className="text-8xl text-center flex text-myellow">
+        <p className="text-8xl text-center flex flex-wrap text-myellow">
           Experiências únicas
         </p>
         <br />
-        <p className="text-8xl text-center flex text-myellow">
+        <p className="text-8xl text-center flex flex-wrap text-myellow">
           Eventos excepcionais
         </p>
       </section>

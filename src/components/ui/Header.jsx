@@ -38,7 +38,7 @@ const Header = () => {
             <span className="ml-8 hover:text-myellow">Login</span>
           </Link>
         </section>
-        <section>
+        {/* <section>
           {" "}
           <Link href="#herosection">
             <Image
@@ -48,7 +48,7 @@ const Header = () => {
               height={50}
             />
           </Link>
-        </section>
+        </section> */}
       </nav>
     </>
   );

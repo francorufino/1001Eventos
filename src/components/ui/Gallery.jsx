@@ -9,10 +9,10 @@ const gfrib = Ribeye_Marrow({
 });
 
 const eventos = [
+  "/eventos/0.jpeg",
   "/eventos/1.jpg",
   "/eventos/2.jpg",
-  "/eventos/3.jpg",
-  "/eventos/4.jpg",
+
   "/eventos/5.jpg",
   "/eventos/6.jpg",
   "/eventos/7.jpg",
@@ -39,19 +39,19 @@ const eventos = [
 
 const Gallery = () => {
   return (
-    <section className="container pt-[50px]">
-      <p className={`text-3xl font-bold mb-8 ${gfrib.className}`}>
+    <section className="container pt-[150px]">
+      <p className={`text-3xl font-bold mb-8 ${gfrib.className}  text-myellow`}>
         Nossa galeria de fotos
       </p>
-      <section className="flex flex-wrap  mx-auto justify-center">
+      <section className="flex flex-wrap justify-center">
         {eventos.map((evento, index) => (
           <article key={index} aria-label="Related Image">
             <Image
               src={evento}
               alt="Photo gallery of the multiple events done, with images of the setups to celebrities"
-              width={300}
-              height={300}
-              className="m-2 rounded-lg  p-0.5 bg-mblack"
+              width={200}
+              height={200}
+              className="m-2 rounded-lg flex p-0.5 bg-mblack"
             />
           </article>
         ))}

@@ -13,8 +13,10 @@ const About = () => {
     <section className="pt-[130px] shadow-lg ">
       <section className="container">
         <section className="flex flex-wrap justify-center  shadow-lg ">
-          <article className="flex-1 mr-3">
-            <p className={`text-3xl font-bold  ${gfrib.className}`}>
+          <article className="flex-1 mr-3 pb-8">
+            <p
+              className={`text-3xl font-bold  ${gfrib.className} text-myellow`}
+            >
               Quem somos
             </p>
             {/* <p>
@@ -41,7 +43,9 @@ const About = () => {
               única e memorável.
             </p>
             <br />
-            <h2 className={`text-3xl font-bold mb-2 ${gfrib.className}`}>
+            <h2
+              className={`text-3xl font-bold mb-2 ${gfrib.className} text-myellow`}
+            >
               Nossa Experiência
             </h2>
             <br />
@@ -68,16 +72,13 @@ const About = () => {
               nossos clientes.
             </p> */}
           </article>
-          <article
-            aria-label="Related Image"
-            className="flex-1 mb-8 justify-center flex"
-          >
+          <article aria-label="Related Image" className="fmb-8 j flex">
             <Image
               src="/lu/lu-standing.jpg"
               alt="Owner standing with hands in the pocket and a friendly smile and an open space of and event in the background"
               width={400}
               height={400}
-              className="rounded-lg"
+              className="rounded-lg w-full"
             />
           </article>{" "}
           <br />
