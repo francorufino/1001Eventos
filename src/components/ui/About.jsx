@@ -12,7 +12,7 @@ const About = () => {
   return (
     <section className="pt-[130px] shadow-lg ">
       <section className="container">
-        <section className="flex flex-wrap justify-center items-center shadow-lg ">
+        <section className="flex flex-wrap justify-center  shadow-lg ">
           <article className="flex-1 mr-3">
             <p className={`text-3xl font-bold  ${gfrib.className}`}>
               Quem somos
@@ -34,9 +34,11 @@ const About = () => {
               <br />
               Somos líderes na produção e coordenação de eventos no Brasil,
               oferecendo serviços completos de produção, coordenação, segurança,
-              transporte e controle. Na 1001 Eventos, garantimos que seu evento
-              seja único e memorável, cuidando de cada detalhe para que você
-              possa aproveitar sem preocupações.
+              transporte e controle. Na{" "}
+              <span className={` ${gfrib.className}`}>1001 Eventos</span>,
+              cuidamos de cada detalhe para que você possa aproveitar seu evento
+              sem preocupações, garantindo assim que tudo seja uma expêriencia
+              única e memorável.
             </p>
             <br />
             <h2 className={`text-3xl font-bold mb-2 ${gfrib.className}`}>
@@ -47,8 +49,7 @@ const About = () => {
               Com mais de 30 anos de experiência na indústria de eventos, temos
               o privilégio de ser uma referência desse setor no mercado. Durante
               essas décadas, atendemos uma ampla variedade de eventos, desde
-              pequenas convenções até grandes eventos em grandes pavilhões, como
-              os pavilhões do Expo Center Norte, por exemplo .
+              pequenas convenções até grandes eventos em grandes pavilhões.
             </p>
             <br />
             <p>

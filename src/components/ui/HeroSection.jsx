@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import { Ribeye_Marrow } from "next/font/google";
 
 const gfrib = Ribeye_Marrow({
@@ -10,28 +9,30 @@ const gfrib = Ribeye_Marrow({
 
 const HeroSection = () => {
   return (
-    <>
-      <section id="herosection" className="mt-[150px]">
-        <section className="container justify-between items-center flex">
-          <section
-            className={`text-6xl flex my-auto flex-col  ${gfrib.className}`}
-          >
-            <p>Experiencias únicas</p>
-            <p>Eventos expepcionais</p>
-          </section>
-
-          <section className="flex-shrink-0   ">
-            <Image
-              src="/herosection/1001Herosection.png"
-              alt="Dancing "
-              width={500}
-              height={50}
-              className="flex justify-end"
-            />
-          </section>
-        </section>
+    <section id="herosection" className="relative h-screen">
+      <video
+        autoPlay
+        muted
+        loop
+        className="absolute inset-0 object-cover w-full h-full"
+      >
+        <source src="/herosection/concert.mp4" type="video/mp4" />
+      </video>
+      <div class="absolute inset-0 flex items-end justify-end">
+        <span class="bg-mblack opacity-60 w-full h-full  object-cover "></span>
+      </div>
+      <section
+        className={`relative z-10 flex flex-col items-center justify-center h-full text-white ${gfrib.className}`}
+      >
+        <p className="text-8xl text-center flex text-myellow">
+          Experiências únicas
+        </p>
+        <br />
+        <p className="text-8xl text-center flex text-myellow">
+          Eventos excepcionais
+        </p>
       </section>
-    </>
+    </section>
   );
 };
 
