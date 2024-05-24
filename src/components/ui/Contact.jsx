@@ -31,7 +31,7 @@ export function Contact() {
         <section className="flex flex-col justify-center text-center">
           <section>
             {" "}
-            <p>Envie um "Zap"!</p>
+            <p>Envie um Zap!</p>
           </section>
           <section className="flex justify-center ">
             <Link href="#herosection">
