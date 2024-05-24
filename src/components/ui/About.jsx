@@ -78,7 +78,7 @@ const About = () => {
               alt="Owner standing with hands in the pocket and a friendly smile and an open space of and event in the background"
               width={400}
               height={400}
-              className="rounded-lg w-full"
+              className="rounded-lg w-full mb-8"
             />
           </article>{" "}
           <br />
