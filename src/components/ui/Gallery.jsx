@@ -83,10 +83,10 @@ const Gallery = () => {
               layout="fill"
               objectFit="cover"
               className="rounded-lg px-2 pt-2 pb-14"
-              alt="photos of events"
+              alt={evento.label}
               priority
             />
-            <div className="absolute inset-x-0 bottom-0  bg-opacity-50 text-mblack text-center pb-5">
+            <div className="absolute inset-x-0 bottom-0  bg-opacity-50 text-mblack font-semibold text-center pb-5">
               <p className="text-sm">{evento.label}</p>
             </div>
           </article>

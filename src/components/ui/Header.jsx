@@ -18,16 +18,16 @@ const Header = () => {
 
   return (
     <nav
-      className={`container mx-auto flex flex-wrap items-center justify-between   text-myellow bg-mblack ${gfrib.className}`}
+      className={`container mx-auto flex flex-wrap items-center justify-between text-myellow bg-mblack ${gfrib.className}`}
     >
       <div className="flex items-center flex-shrink-0 mr-4 ">
         <Link href="#herosection">
           <Image
             src={"/logo/logo.png"}
             alt="logo"
-            width={100}
-            height={100}
-            className=""
+            width={50}
+            height={50}
+            className="md:w-[100px] md:h-[100px]"
           />
         </Link>
       </div>

@@ -30,9 +30,9 @@ const About = () => {
               className="rounded-lg w-full mb-8"
             />
           </article>
-          <article className="mr-16 flex-1">
+          <article className=" lg:text-left">
             <p
-              className={`text-3xl md:text-4xl  font-bold  ${gfrib.className} font-bold text-myellow`}
+              className={`text-3xl  md:text-4xl font-bold  ${gfrib.className} font-bold text-myellow`}
             >
               Somos um time experiente
               <br />
