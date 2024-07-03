@@ -67,7 +67,7 @@ const Gallery = () => {
   return (
     <section className="container pt-[50px] pb-8">
       <p
-        className={`text-3xl md:text-4xl   font-bold mb-20 ${gfrib.className} text-center text-myellow font-bold `}
+        className={`text-3xl md:text-4xl font-bold mb-12 xl:mb-20 ${gfrib.className} text-center text-myellow font-bold `}
       >
         Galeria de fotos
       </p>

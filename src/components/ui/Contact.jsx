@@ -25,7 +25,7 @@ export function Contact() {
     <>
       <section className="container pt-[50px]">
         <p
-          className={`text-3xl md:text-4xl  font-bold mb-20 mb-20 ${gfrib.className} text-center`}
+          className={`text-3xl md:text-4xl  font-bold mb-12 xl:mb-20 ${gfrib.className} text-center`}
         >
           Entre em contato
         </p>

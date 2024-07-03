@@ -21,7 +21,7 @@ const Servicos = () => {
     <>
       <section id="services" className="container pt-[50px] mx-auto px-4 pb-4">
         <p
-          className={`text-3xl md:text-4xl font-bold mb-20 ${gfrib.className} text-center`}
+          className={`text-3xl md:text-4xl font-bold mb-12 xl:mb-20 ${gfrib.className} text-center`}
         >
           Nossos Serviços
         </p>
