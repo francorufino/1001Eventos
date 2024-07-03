@@ -9,26 +9,29 @@ const gfrib = Ribeye_Marrow({
 
 const About = () => {
   return (
-    <section className="pt-[60px] pb-16">
+    <section className="pt-[60px] pb-12 xl:pb-32">
       <section className="container">
         <p
-          className={`text-center text-3xl md:text-4xl font-bold  ${gfrib.className} font-bold text-myellow`}
+          className={`text-center text-3xl md:text-4xl font-bold   ${gfrib.className} font-bold text-myellow`}
         >
           Quem somos
           <br />
           <br />
         </p>
-        <section className="lg:flex md:items-center">
-          <article aria-label="Related Image" className="mr-8">
+        <section className="flex flex-col justify-center items-center xl:flex-row ">
+          <article
+            aria-label="Related Image"
+            className="xl:w-[600px] xl:h-[400px]"
+          >
             <Image
               src="/lu/lu_pointing3.png"
               alt="CEO photo"
-              width={200}
-              height={200}
-              className="rounded-lg w-full mb-8"
+              width={250}
+              height={250}
+              className="rounded-lg mb-8 xl:w-full "
             />
           </article>
-          <article className="lg:text-left">
+          <article className="lg:text-left xl:pl-6">
             <p
               className={`text-3xl  md:text-4xl font-bold  ${gfrib.className} font-bold text-myellow`}
             >
