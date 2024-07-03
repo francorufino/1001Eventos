@@ -16,7 +16,7 @@ const About = () => {
         <p
           className={`text-center text-3xl md:text-4xl font-bold  ${gfrib.className} font-bold text-myellow`}
         >
-          Sobre nós
+          Quem somos
           <br />
           <br />
         </p>
@@ -34,38 +34,35 @@ const About = () => {
             <p
               className={`text-3xl md:text-4xl  font-bold  ${gfrib.className} font-bold text-myellow`}
             >
-              Quem somos
+              Somos um time experiente
               <br />
               <br />
             </p>
             <p className="text-lg lg:2xl">
-              Somos um time com mais de 25 anos de experiência no ramo de shows
-              e eventos.
+              Contamos com mais de 25 anos de experiência no ramo de shows e
+              eventos.
             </p>
             <br />
 
-            <h2
-              className={`text-3xl  font-bold  ${gfrib.className} text-myellow`}
-            >
-              Nossa Experiência
-            </h2>
-            <br />
             <section className="text-lg lg:2xl">
               <p>
                 A 1001 fornece para seu evento profissionais na área de
                 fiscalização operacional, coordenação de pessoal (segurança,
                 bombeiros, limpeza e produção).
               </p>
+              <br />
               <p>
                 Também nos destacamos para sua comodidade com uma equipe de
                 carregadores para o desembarque e embarque de materiais de
-                montagem ou de exposição, fazendo assim os trabalhos fluírem
-                dentro dos prazos determinados.
+                montagem ou exposição, fazendo assim os trabalhos fluírem dentro
+                dos prazos determinados.
               </p>
+              <br />
               <p>
                 Somos a empresa oficial e referência de carregadores nos grandes
                 eventos ABUP E MARA CAKES FAIR.
               </p>
+              <br />
               <p>
                 A 1001 EVENTOS agradece sua atenção e esperamos seu contato para
                 futuros trabalhos!! Obrigado.
