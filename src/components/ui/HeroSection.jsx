@@ -25,7 +25,7 @@ const HeroSection = () => {
       <section
         className={`relative lg:pt-48 z-10 flex flex-col items-center font-bold justify-center h-full text-white ${gfrib.className}`}
       >
-        <p className="text-4xl md:text-6xl pt-32 lg:text-8xl text-center font-bold flex flex-wrap text-myellow">
+        <p className="text-4xl md:text-6xl  lg:text-8xl text-center font-bold flex flex-wrap text-myellow">
           1001 EVENTOS
         </p>
         <section className="relative h-32 w-full flex justify-center items-center">
