@@ -55,8 +55,8 @@ export function Contact() {
               height={100}
             />
           </section>
-          <section>
-            <Card className="w-[350px] -mt-8  ">
+          <section className="pb-8">
+            <Card className="w-[350px]   ">
               <CardHeader>
                 <CardTitle>Envie um e-mail pra gente!</CardTitle>
               </CardHeader>
