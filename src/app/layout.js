@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
     <html lang="pt">
       <body className={`bg-myellow $ text-mblack ${gfmon.className} `}>
         <section className="flex flex-col  h-screen justify-between w-full">
-          <section className="bg-mblack flex w-full h-[110px] fixed z-50 border-b-2 border-myellow">
+          <section className="bg-mblack flex w-full h-[120px] fixed z-50 border-b-2 border-myellow">
             <Header />
           </section>
           <section className={``}>

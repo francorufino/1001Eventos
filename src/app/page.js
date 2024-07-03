@@ -18,12 +18,15 @@ export default function Home() {
       <section id="herosection">
         <HeroSection />
       </section>
+
       <section id="about" className="text-mwhite bg-mblack">
         <About />
       </section>
+
       <section id="services">
         <Servicos />
       </section>
+
       <section id="gallery" className="text-mwhite bg-mblack">
         <Gallery />
       </section>
