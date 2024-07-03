@@ -5,13 +5,11 @@ import { Ribeye_Marrow } from "next/font/google";
 const gfrib = Ribeye_Marrow({
   subsets: ["latin"],
   weight: "400"
-  // variable: "--font-gfrib"
 });
 
 const About = () => {
   return (
     <section className="pt-[60px] pb-16">
-      {" "}
       <section className="container">
         <p
           className={`text-center text-3xl md:text-4xl font-bold  ${gfrib.className} font-bold text-myellow`}
@@ -20,8 +18,8 @@ const About = () => {
           <br />
           <br />
         </p>
-        <section className="lg:flex md:items-center  ">
-          <article aria-label="Related Image" className="mr-8 ">
+        <section className="lg:flex md:items-center">
+          <article aria-label="Related Image" className="mr-8">
             <Image
               src="/lu/lu_pointing3.png"
               alt="CEO photo"
@@ -30,7 +28,7 @@ const About = () => {
               className="rounded-lg w-full mb-8"
             />
           </article>
-          <article className=" lg:text-left">
+          <article className="lg:text-left">
             <p
               className={`text-3xl  md:text-4xl font-bold  ${gfrib.className} font-bold text-myellow`}
             >
@@ -43,7 +41,6 @@ const About = () => {
               eventos.
             </p>
             <br />
-
             <section className="text-lg lg:2xl">
               <p>
                 A 1001 fornece para seu evento profissionais na área de
@@ -68,7 +65,7 @@ const About = () => {
                 futuros trabalhos!! Obrigado.
               </p>
             </section>
-          </article>{" "}
+          </article>
           <br />
         </section>
       </section>

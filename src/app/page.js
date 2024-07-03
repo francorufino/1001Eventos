@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Header from "../components/ui/Header";
 import HeroSection from "../components/ui/HeroSection";
 import About from "../components/ui/About";
 import Gallery from "../components/ui/Gallery";
@@ -10,11 +11,12 @@ import { Montserrat_Alternates } from "next/font/google";
 const gfmon = Montserrat_Alternates({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"]
-  // variable: "--font-gfmon"
 });
+
 export default function Home() {
   return (
-    <main className={`relative ${gfmon.className} `}>
+    <main className={`relative ${gfmon.className}`}>
+      <Header />
       <section id="herosection">
         <HeroSection />
       </section>

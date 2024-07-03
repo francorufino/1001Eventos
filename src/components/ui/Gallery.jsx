@@ -45,6 +45,7 @@ const eventos = [
   { src: "/eventos/49.jpeg", label: " 49" },
   { src: "/eventos/50.jpeg", label: " 50" },
   { src: "/eventos/52.png", label: " 52" },
+  { src: "/eventos/53.png", label: " 53" },
   { src: "/eventos/9.png", label: " 9" },
   { src: "/eventos/15.png", label: " 15" },
   { src: "/eventos/19.png", label: " 19" },

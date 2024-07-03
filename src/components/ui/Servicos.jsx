@@ -48,7 +48,12 @@ const Servicos = () => {
                   </CardDescription>
                 </CardHeader>
               </Card>
-              <Image width={300} height={300} src={"/logo/cart.png "} />
+              <Image
+                width={300}
+                height={300}
+                src={"/logo/cart.png "}
+                priority
+              />
             </article>
 
             {/* <article

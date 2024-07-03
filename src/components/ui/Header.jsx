@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Ribeye_Marrow } from "next/font/google";
@@ -16,11 +16,47 @@ const Header = () => {
     setIsOpen(!isOpen);
   };
 
+  useEffect(() => {
+    const handleScroll = (e) => {
+      if (
+        e.target.tagName === "A" &&
+        e.target.getAttribute("href").startsWith("#")
+      ) {
+        e.preventDefault();
+        const targetId = e.target.getAttribute("href").substring(1);
+        const targetElement = document.getElementById(targetId);
+        const navbarHeight = 70; // Adjust this value to the height of your navbar
+        const padding = 50; // Additional padding
+
+        if (targetElement) {
+          const elementPosition =
+            targetElement.getBoundingClientRect().top + window.pageYOffset;
+          const offsetPosition = elementPosition - navbarHeight - padding;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth"
+          });
+        }
+      }
+    };
+
+    document.querySelectorAll("nav a").forEach((link) => {
+      link.addEventListener("click", handleScroll);
+    });
+
+    return () => {
+      document.querySelectorAll("nav a").forEach((link) => {
+        link.removeEventListener("click", handleScroll);
+      });
+    };
+  }, []);
+
   return (
     <nav
       className={`container mx-auto flex flex-wrap items-center justify-between text-myellow bg-mblack ${gfrib.className}`}
     >
-      <div className="flex items-center flex-shrink-0 mr-4 ">
+      <div className="flex items-center flex-shrink-0 mr-4">
         <Link href="#herosection">
           <Image
             src={"/logo/logo.png"}
