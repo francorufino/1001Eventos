@@ -51,7 +51,7 @@ const Servicos = () => {
               <Image
                 width={300}
                 height={300}
-                src={"/logo/cart.png "}
+                src={"/logo/cart-1-01.webp"}
                 priority
               />
             </article>

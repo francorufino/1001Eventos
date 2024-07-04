@@ -35,7 +35,7 @@ const HeroSection = () => {
           <span className="text-4xl -mt-16 md:text-6xl lg:text-7xl text-center font-bold text-mwhite myRotatingWords">
             Palestras
           </span>
-          <span className="text-4xl -mt-8 md:text-6xl lg:text-7xl  text-center font-bold text-mwhite myRotatingWords">
+          <span className="text-4xl -mt-16 md:text-6xl lg:text-7xl  text-center font-bold text-mwhite myRotatingWords">
             Eventos Coorporativos
           </span>
           <span className="text-4xl -mt-16 md:text-6xl lg:text-7xl  text-center font-bold text-mwhite myRotatingWords">

@@ -87,7 +87,7 @@ const Header = () => {
           isOpen ? "block" : "hidden"
         }`}
       >
-        <div className="text-sm lg:flex-grow lg:text-right">
+        <div className="text-md lg:flex-grow lg:text-right ">
           <Link
             href="#about"
             className="block mt-4 lg:inline-block lg:mt-0 text-myellow hover:text-mwhite mr-4"
