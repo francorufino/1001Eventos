@@ -112,7 +112,7 @@ const Servicos = () => {
                 </section> */}
               </Card>
               <section>
-                <Image width={300} height={300} src={"/logo/cart.png "} />
+                <Image width={300} height={300} src={"/logo/cart-1-01.webp"} />
               </section>
             </article>
 
@@ -144,7 +144,7 @@ const Servicos = () => {
                   </CardContent>{" "}
                 </section> */}
               </Card>
-              <Image width={300} height={300} src={"/logo/cart.png "} />
+              <Image width={300} height={300} src={"/logo/cart-1-01.webp"} />
             </article>
           </section>
         </section>
