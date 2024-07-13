@@ -17,7 +17,7 @@ const HeroSection = () => {
         loop
         className="absolute inset-0 object-cover w-full h-full"
       >
-        <source src="/videos/concert.mp4" type="video/mp4" />
+        <source src="/videos/concertResized.mp4" type="video/mp4" />
       </video>
       <div className="absolute inset-0 flex items-end justify-end">
         <span className="bg-mblack opacity-60 w-full h-full object-cover"></span>

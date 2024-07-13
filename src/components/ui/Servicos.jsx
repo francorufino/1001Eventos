@@ -53,6 +53,7 @@ const Servicos = () => {
                 height={300}
                 src={"/logo/cart-1-01.webp"}
                 priority
+                alt="cart"
               />
             </article>
 
@@ -112,7 +113,12 @@ const Servicos = () => {
                 </section> */}
               </Card>
               <section>
-                <Image width={300} height={300} src={"/logo/cart-1-01.webp"} />
+                <Image
+                  width={300}
+                  height={300}
+                  src={"/logo/cart-1-01.webp"}
+                  alt="cart"
+                />
               </section>
             </article>
 
@@ -144,7 +150,12 @@ const Servicos = () => {
                   </CardContent>{" "}
                 </section> */}
               </Card>
-              <Image width={300} height={300} src={"/logo/cart-1-01.webp"} />
+              <Image
+                width={300}
+                height={300}
+                src={"/logo/cart-1-01.webp"}
+                alt="cart"
+              />
             </article>
           </section>
         </section>

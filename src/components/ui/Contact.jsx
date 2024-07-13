@@ -21,6 +21,13 @@ const gfrib = Ribeye_Marrow({
 });
 
 export function Contact() {
+  function handleSubmit() {
+    // TODO: Send the form data to your server
+    console.log("Form submitted");
+    // Reset the form
+    document.getElementById("contactForm").reset();
+  }
+
   return (
     <>
       <section className="container pt-[50px]">
@@ -57,28 +64,43 @@ export function Contact() {
           </section>
           <section className="pb-8">
             <Card className="w-[350px]   ">
-              <CardHeader>
-                <CardTitle>Envie um e-mail pra gente!</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <section className="grid w-full  gap-4">
-                  <section className="flex flex-col space-y-1.5">
-                    <Label htmlFor="name">Nome</Label>
-                    <Input id="name" placeholder="Digite seu nome" />
+              {" "}
+              <form id="contactForm">
+                <CardHeader>
+                  <CardTitle>Envie um e-mail pra gente!</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <section className="grid w-full  gap-4">
+                    <section className="flex flex-col space-y-1.5">
+                      <Label htmlFor="name">Nome</Label>
+                      <Input id="name" placeholder="Digite seu nome" required />
+                    </section>
+                    <section className="flex flex-col space-y-1.5">
+                      <Label htmlFor="email">E-mail</Label>
+                      <Input
+                        id="email"
+                        placeholder="Digite seu e-mail"
+                        name="senderEmail"
+                        type="email"
+                        required
+                      />
+                    </section>
+                    <section className="flex flex-col space-y-1.5">
+                      <Label htmlFor="mensagem">Mensagem</Label>
+                      <Textarea
+                        id="mensagem"
+                        placeholder="Digite sua mensagem"
+                        name="message"
+                        type="text"
+                        required
+                      />
+                    </section>
                   </section>
-                  <section className="flex flex-col space-y-1.5">
-                    <Label htmlFor="email">E-mail</Label>
-                    <Input id="email" placeholder="Digite seu e-mail" />
-                  </section>
-                  <section className="flex flex-col space-y-1.5">
-                    <Label htmlFor="mensagem">Mensagem</Label>
-                    <Textarea id="mensagem" placeholder="Digite sua mensagem" />
-                  </section>
-                </section>
-              </CardContent>
-              <CardFooter className="flex justify-center">
-                <Button>Enviar</Button>
-              </CardFooter>
+                </CardContent>
+                <CardFooter className="flex justify-center">
+                  <Button onClick={handleSubmit}>Enviar</Button>
+                </CardFooter>
+              </form>
             </Card>
           </section>
         </section>
