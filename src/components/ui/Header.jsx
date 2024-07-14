@@ -3,6 +3,8 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Ribeye_Marrow } from "next/font/google";
+import { Menu, X } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 const gfrib = Ribeye_Marrow({
   subsets: ["latin"],
@@ -11,6 +13,7 @@ const gfrib = Ribeye_Marrow({
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -53,74 +56,126 @@ const Header = () => {
   }, []);
 
   return (
-    <nav
-      className={`container mx-auto flex flex-wrap items-center justify-between text-myellow bg-mblack ${gfrib.className}`}
-    >
-      <div className="flex items-center flex-shrink-0 mr-4">
+    <header className={`w-full bg-mblack text-myellow ${gfrib.className}`}>
+      <section className="container max-w-screen-xl mx-auto py-6 flex justify-between items-center">
         <Link href="#herosection">
           <Image
-            src={"/logo/logo.png"}
+            src="/logo/logo.png"
             alt="logo"
             width={50}
             height={50}
-            className="md:w-[100px] md:h-[100px]"
+            className="sm:w-[75px] sm:h-[75px] xl:w-[100px] xl:h-[100px]"
           />
         </Link>
-      </div>
-      <div className="block lg:hidden">
-        <button
-          onClick={toggleMenu}
-          className="flex items-center px-3 py-2 border rounded text-myellow border-myellow hover:text-mwhite hover:border-mwhite"
-        >
-          <svg
-            className="fill-current h-3 w-3"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-          </svg>
-        </button>
-      </div>
-      <div
-        className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto ${
-          isOpen ? "block" : "hidden"
+
+        <section className="flex space-x-4 justify-center items-center">
+          <nav className="hidden md:flex justify-between gap-4">
+            <Link
+              href="#about"
+              className={`${
+                pathname === "#about" ? "text-myellow" : ""
+              } text-base font-semibold hover:text-mwhite`}
+            >
+              Sobre
+            </Link>
+            <Link
+              href="#services"
+              className={`${
+                pathname === "#services" ? "text-myellow" : ""
+              } text-base font-semibold hover:text-mwhite`}
+            >
+              Serviços
+            </Link>
+            <Link
+              href="#gallery"
+              className={`${
+                pathname === "#gallery" ? "text-myellow" : ""
+              } text-base font-semibold hover:text-mwhite`}
+            >
+              Galeria
+            </Link>
+            <Link
+              href="#contact"
+              className={`${
+                pathname === "#contact" ? "text-myellow" : ""
+              } text-base font-semibold hover:text-mwhite`}
+            >
+              Contato
+            </Link>
+            <Link
+              href="#login"
+              className={`${
+                pathname === "#login" ? "text-myellow" : ""
+              } text-base font-semibold hover:text-mwhite`}
+            >
+              Login
+            </Link>
+          </nav>
+
+          <section className="md:hidden flex items-center">
+            <button onClick={toggleMenu} className="text-myellow">
+              {isOpen ? <X size={32} /> : <Menu size={32} />}
+            </button>
+          </section>
+        </section>
+      </section>
+
+      <section
+        className={`md:hidden bg-mblack text-myellow transition-all duration-300 ease-in-out ${
+          isOpen
+            ? "max-h-screen opacity-100 pb-4"
+            : "max-h-0 opacity-0 overflow-hidden"
         }`}
       >
-        <div className="text-md lg:flex-grow lg:text-right ">
+        <nav className="flex flex-col text-center space-y-4">
           <Link
             href="#about"
-            className="block mt-4 lg:inline-block lg:mt-0 text-myellow hover:text-mwhite mr-4"
+            className={`${
+              pathname === "#about" ? "text-mwhite" : ""
+            } text-base font-semibold hover:text-mwhite`}
+            onClick={toggleMenu} // Close menu on link click
           >
             Sobre
           </Link>
           <Link
             href="#services"
-            className="block mt-4 lg:inline-block lg:mt-0 text-myellow hover:text-mwhite mr-4"
+            className={`${
+              pathname === "#services" ? "text-mwhite" : ""
+            } text-base font-semibold hover:text-mwhite`}
+            onClick={toggleMenu} // Close menu on link click
           >
             Serviços
           </Link>
           <Link
             href="#gallery"
-            className="block mt-4 lg:inline-block lg:mt-0 text-myellow hover:text-mwhite mr-4"
+            className={`${
+              pathname === "#gallery" ? "text-mwhite" : ""
+            } text-base font-semibold hover:text-mwhite`}
+            onClick={toggleMenu} // Close menu on link click
           >
             Galeria
           </Link>
           <Link
             href="#contact"
-            className="block mt-4 lg:inline-block lg:mt-0 text-myellow hover:text-mwhite mr-4"
+            className={`${
+              pathname === "#contact" ? "text-mwhite" : ""
+            } text-base font-semibold hover:text-mwhite`}
+            onClick={toggleMenu} // Close menu on link click
           >
             Contato
           </Link>
           <Link
             href="#login"
-            className="block mt-4 lg:inline-block lg:mt-0 text-myellow hover:text-mwhite"
+            className={`${
+              pathname === "#login" ? "text-mwhite" : ""
+            } text-base font-semibold hover:text-mwhite`}
+            onClick={toggleMenu} // Close menu on link click
           >
             Login
           </Link>
-        </div>
-      </div>
-    </nav>
+        </nav>
+      </section>
+    </header>
   );
 };
 
