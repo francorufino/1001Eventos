@@ -14,7 +14,7 @@ const eventos = [
   { src: "/eventos/40.jpeg", label: " Organização - Evento Arnold" },
   {
     src: "/eventos/41.jpeg",
-    label: " Empresa Oficial de Carregadores - Abup"
+    label: " Empresa Oficial - Abup"
   },
   { src: "/eventos/8.jpg", label: "Carregadores" },
   { src: "/eventos/2.jpg", label: " Empresa Oficial - Abup" },
