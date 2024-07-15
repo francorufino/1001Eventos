@@ -3,10 +3,10 @@ import React from "react";
 import Image from "next/image";
 import {
   Card,
-  CardContent,
+  // CardContent,
   CardDescription,
-  CardHeader,
-  CardTitle
+  CardHeader
+  // CardTitle
 } from "@/components/ui/card";
 
 import { Ribeye_Marrow } from "next/font/google";
@@ -41,7 +41,7 @@ const Servicos = () => {
               <Card className="w-[280px] h-[200px] flex justify-center flex-col text-center -mt-4">
                 <CardHeader>
                   {/* <CardTitle>Transporte</CardTitle> */}
-                  <CardDescription className="text-xs sm:text-base">
+                  <CardDescription className="font-[600]">
                     Transportamos com carregadores qualificados do seu caminhão
                     até o seu espaço de montagem ou retiramos do seu stand até
                     seu Transporte.{" "}
@@ -56,34 +56,6 @@ const Servicos = () => {
                 alt="cart"
               />
             </article>
-
-            {/* <article
-              aria-label="icones dos serviços prestados"
-              className="flex flex-col justify-center text-center items-center"
-            > */}
-            {/* <Card className="w-[250px] h-[200px] flex justify-center flex-col text-center"> */}
-            {/* <CardHeader className="p-4">
-                  <CardTitle>Segurança</CardTitle>
-                  <CardDescription>
-                    A segurança de nossos clientes e participantes é nossa
-                    prioridade. Temos uma equipe de profissionais treinados para
-                    garantir um ambiente seguro em todos os momentos.{" "}
-                  </CardDescription>
-                </CardHeader> */}
-            {/* <section className="flex justify-center">
-                  <CardContent>
-                    {" "}
-                    <Headset
-                      alt="Owner standing with hands in the pocket and a friendly smile and an open space of and event in the background"
-                      width={250}
-                      height={100}
-                    />
-                  </CardContent>{" "}
-                </section> */}
-            {/* </Card> */}
-            {/* <Image width={300} height={300} src={"/logo/cart.png "} /> */}
-            {/* </article> */}
-
             <article
               aria-label="icones dos serviços prestados "
               className="flex flex-col justify-center text-center items-center"
@@ -94,23 +66,13 @@ const Servicos = () => {
               <Card className="w-[280px] h-[200px] flex justify-center flex-col text-center -mt-4">
                 <CardHeader>
                   {/* <CardTitle>Produção</CardTitle> */}
-                  <CardDescription className="text-xs sm:text-base">
+                  <CardDescription className="font-[600]">
                     {" "}
                     Contamos com produtores com vasta experiência no ramo de
                     eventos para a montagem e desmontagem de toda a
                     infraestrutura do seu Stand.
                   </CardDescription>
                 </CardHeader>
-                {/* <section className="flex justify-center">
-                  <CardContent>
-                    {" "}
-                    <ClipboardList
-                      alt="Owner standing with hands in the pocket and a friendly smile and an open space of and event in the background"
-                      width={250}
-                      height={100}
-                    />
-                  </CardContent>{" "}
-                </section> */}
               </Card>
               <section>
                 <Image
@@ -132,7 +94,7 @@ const Servicos = () => {
               <Card className="w-[280px] h-[200px] flex justify-center flex-col text-center -mt-4">
                 <CardHeader>
                   {/* <CardTitle>Coordenação</CardTitle> */}
-                  <CardDescription className="text-xs sm:text-base">
+                  <CardDescription className="font-[600]">
                     Equipes com coordenadores responsáveis para fluir os
                     trabalhos e assim fazer chegar sua carga ou mercadoria de
                     exposição com rapidez e agilidade no seu espaço ou no seu

@@ -23,7 +23,7 @@ const gfrib = Ribeye_Marrow({
 export function Contact() {
   return (
     <>
-      <section className="container pt-[50px]">
+      <section id="contact" className="container pt-[50px]">
         <p
           className={`text-3xl md:text-4xl  font-bold mb-12 xl:mb-20 ${gfrib.className} text-center`}
         >
@@ -36,7 +36,7 @@ export function Contact() {
               <section>
                 {" "}
                 <p>Envie um Zap!</p>
-                <p className="font-semibold text-xl">12 992447547</p>
+                <p className="font-semibold text-xl">(12) 99244-7547</p>
               </section>
               <section className="flex justify-center ">
                 <Image

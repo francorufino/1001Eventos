@@ -102,14 +102,6 @@ const Header = () => {
             >
               Contato
             </Link>
-            <Link
-              href="#login"
-              className={`${
-                pathname === "#login" ? "text-myellow" : ""
-              } text-base font-semibold hover:text-mwhite`}
-            >
-              Login
-            </Link>
           </nav>
 
           <section className="md:hidden flex items-center">
@@ -164,7 +156,7 @@ const Header = () => {
           >
             Contato
           </Link>
-          <Link
+          {/* <Link
             href="#login"
             className={`${
               pathname === "#login" ? "text-mwhite" : ""
@@ -172,7 +164,7 @@ const Header = () => {
             onClick={toggleMenu} // Close menu on link click
           >
             Login
-          </Link>
+          </Link> */}
         </nav>
       </section>
     </header>
