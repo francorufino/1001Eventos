@@ -1,18 +1,18 @@
 import * as React from "react";
 import Link from "next/link";
-import Image from "next/image"; // Correct import for Image
-import { Button } from "@/components/ui/button";
+import Image from "next/image";
+// import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
-  CardFooter,
+  // CardFooter,
   CardHeader,
   CardTitle
 } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+// import { Input } from "@/components/ui/input";
+// import { Label } from "@/components/ui/label";
 import { Ribeye_Marrow } from "next/font/google";
-import { Textarea } from "@/components/ui/textarea";
+// import { Textarea } from "@/components/ui/textarea";
 
 const gfrib = Ribeye_Marrow({
   subsets: ["latin"],
@@ -21,13 +21,6 @@ const gfrib = Ribeye_Marrow({
 });
 
 export function Contact() {
-  function handleSubmit() {
-    // TODO: Send the form data to your server
-    console.log("Form submitted");
-    // Reset the form
-    document.getElementById("contactForm").reset();
-  }
-
   return (
     <>
       <section className="container pt-[50px]">
@@ -37,29 +30,29 @@ export function Contact() {
           Entre em contato
         </p>
 
-        <section className="flex flex-wrap justify-center">
+        <section className="flex flex-wrap justify-center ">
           <section>
-            <section className="flex flex-col justify-center -mb-12 text-center">
+            <section className="flex flex-col justify-center -mb-12 text-center cursor-pointer">
               <section>
                 {" "}
                 <p>Envie um Zap!</p>
+                <p className="font-semibold text-xl">12 992447547</p>
               </section>
               <section className="flex justify-center ">
-                <Link href="#herosection">
-                  <Image
-                    src={"/icons/icons8-whatsapp-480.png"}
-                    alt="whatsapp icon"
-                    width={50}
-                    height={50}
-                  />
-                </Link>
-              </section>
+                <Image
+                  src={"/icons/icons8-whatsapp-480.png"}
+                  alt="whatsapp icon"
+                  width={50}
+                  height={50}
+                />
+              </section>{" "}
             </section>
             <Image
               src={"/contato/phone1.png"}
               alt="whatsapp icon"
-              width={300}
+              width={200}
               height={100}
+              //foto 200 por enquanto, devera ser 300 - qdo tiver o form de email
             />
           </section>
           <section className="pb-8">
@@ -67,11 +60,14 @@ export function Contact() {
               {" "}
               <form id="contactForm">
                 <CardHeader>
-                  <CardTitle>Envie um e-mail pra gente!</CardTitle>
+                  <CardTitle className="text-center">
+                    Envie um e-mail pra gente!
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <section className="grid w-full  gap-4">
-                    <section className="flex flex-col space-y-1.5">
+                  <section className="grid w-full text-center font-semibold gap-4 text-lg">
+                    <p>10001eventos@gmail.com</p>
+                    {/* <section className="flex flex-col space-y-1.5">
                       <Label htmlFor="name">Nome</Label>
                       <Input id="name" placeholder="Digite seu nome" required />
                     </section>
@@ -94,14 +90,22 @@ export function Contact() {
                         type="text"
                         required
                       />
-                    </section>
+                    </section> */}
                   </section>
                 </CardContent>
-                <CardFooter className="flex justify-center">
-                  <Button onClick={handleSubmit}>Enviar</Button>
-                </CardFooter>
+                {/* <CardFooter className="flex justify-center">
+                 */}
+                {/* <Button onClick={handleSubmit}>Enviar</Button> */}
+                {/* </CardFooter> */}
               </form>
             </Card>
+            <Image
+              src={"/contato/email.png"}
+              alt="whatsapp icon"
+              width={50}
+              height={100}
+              className="mt-6 mx-auto"
+            />
           </section>
         </section>
       </section>
