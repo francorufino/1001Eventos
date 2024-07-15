@@ -17,8 +17,8 @@ const eventos = [
     label: " Empresa Oficial de Carregadores - Abup"
   },
   { src: "/eventos/8.jpg", label: "Carregadores" },
-  { src: "/eventos/2.jpg", label: " Empresa Oficial de Carregadores - Abup" },
-  { src: "/eventos/47.jpeg", label: " Empresa Oficial de Carregadores - Abup" },
+  { src: "/eventos/2.jpg", label: " Empresa Oficial - Abup" },
+  { src: "/eventos/47.jpeg", label: " Empresa Oficial - Abup" },
   { src: "/eventos/10.png", label: " Organização - Evento Apas " },
   { src: "/eventos/11.jpg", label: "Carregadores" },
   { src: "/eventos/12.jpg", label: "Carregadores" },
@@ -29,46 +29,46 @@ const eventos = [
   { src: "/eventos/38.jpeg", label: " Produção e Fiscalização" },
   { src: "/eventos/28a.png", label: " Fiscalização e Produção" },
   { src: "/eventos/30.jpeg", label: " Expo Revestir " },
-  { src: "/eventos/31.png", label: " Marcação Sambódromo do Anhembi " },
+  { src: "/eventos/31.png", label: " Marcação do Sambódromo  " },
   { src: "/eventos/32.jpeg", label: " Produção e Fiscalização" },
   { src: "/eventos/3.png", label: " Coordenação" },
-  { src: "/eventos/33.jpeg", label: " Coordenação de Serviços Evento CBTD" },
-  { src: "/eventos/34.jpeg", label: " Carga e Descarga Caminhões Montadoras" },
+  { src: "/eventos/33.jpeg", label: " Coordenação - CBTD" },
+  { src: "/eventos/34.jpeg", label: " Carga e Descarga" },
   { src: "/eventos/35.jpeg", label: "  Produção " },
   { src: "/eventos/36.jpeg", label: "  Produção " },
   { src: "/eventos/37.jpeg", label: " Família 1001 Eventos" },
   { src: "/eventos/39.jpeg", label: " Equipe Operacional Apas" },
-  { src: "/eventos/42.jpeg", label: " Carregares Oficial da Abup Textil Home" },
+  { src: "/eventos/42.jpeg", label: " Carregares Oficial - Abup " },
   { src: "/eventos/43.png", label: " Família 1001 Eventos" },
-  { src: "/eventos/44.png", label: " Coordenadores da 1001 Eventos" },
+  { src: "/eventos/44.png", label: " Coordenadores - 1001 Eventos" },
   { src: "/eventos/24.jpg", label: " Hospitalidade de VIPs" },
   { src: "/eventos/7.png", label: "Carregadores" },
   { src: "/eventos/46.jpeg", label: " Carregadores Oficial " },
   { src: "/eventos/46a.png", label: " Carregadores Oficial " },
   {
     src: "/eventos/49.jpeg",
-    label: " Operação e Produção do Brazil Promotion "
+    label: " Produção - Brazil Promotion "
   },
-  { src: "/eventos/50.jpeg", label: " Amigo e Fundador da Ladico Evento" },
+  { src: "/eventos/50.jpeg", label: " Ladico Evento" },
   {
     src: "/eventos/52.png",
     label: " Anhembi - onde tudo começou"
   },
-  { src: "/eventos/53.png", label: " Amigos da fundadora da Da2 Eventos " },
-  { src: "/eventos/9.png", label: " Produção do Evento RD Notáveis " },
-  { src: "/eventos/15.png", label: " Apresentador Danilo Gentili" },
-  { src: "/eventos/19.png", label: " Ator Henri Castelli" },
+  { src: "/eventos/53.png", label: " Amigos - Da2 Eventos " },
+  { src: "/eventos/9.png", label: " Produção - RD Notáveis " },
+  { src: "/eventos/15.png", label: " Danilo Gentili" },
+  { src: "/eventos/19.png", label: " Henri Castelli" },
   { src: "/eventos/21.png", label: " Jogador Souza " },
   { src: "/eventos/0.jpeg", label: "Neymar" },
   { src: "/eventos/18.png", label: "Adriane Galisteu" },
   {
     src: "/eventos/25.jpg",
-    label: " Coord. da Segurança do cantor Projota"
+    label: " Coord. Segurança - Projota"
   },
-  { src: "/eventos/26.png", label: " Apresentadora Helen Ganzarolii" },
+  { src: "/eventos/26.png", label: " Helen Ganzarolii" },
   {
     src: "/eventos/27.png",
-    label: " Medalhista Olímpico Fernando Scheree"
+    label: " Medalhista Olímpico Xuxa"
   },
   { src: "/eventos/20.png", label: "Sérgio Malandro" },
   { src: "/eventos/45.png", label: " Arnold Schwarzenegger" },

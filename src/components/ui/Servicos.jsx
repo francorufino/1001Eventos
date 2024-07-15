@@ -35,13 +35,13 @@ const Servicos = () => {
               aria-label="icones dos serviços prestados"
               className="flex flex-col justify-center text-center items-center"
             >
-              <h1 className="bg-mblack text-mwhite w-full text-2xl h-16 z-10 font-bold pt-5 flex flex-col ">
+              <h1 className="bg-mblack text-mwhite w-full text-lg sm:text-2xl h-16 z-10 font-bold pt-5 flex flex-col ">
                 Transporte
               </h1>
               <Card className="w-[280px] h-[200px] flex justify-center flex-col text-center -mt-4">
                 <CardHeader>
                   {/* <CardTitle>Transporte</CardTitle> */}
-                  <CardDescription>
+                  <CardDescription className="text-xs sm:text-base">
                     Transportamos com carregadores qualificados do seu caminhão
                     até o seu espaço de montagem ou retiramos do seu stand até
                     seu Transporte.{" "}
@@ -88,13 +88,13 @@ const Servicos = () => {
               aria-label="icones dos serviços prestados "
               className="flex flex-col justify-center text-center items-center"
             >
-              <h1 className="bg-mblack text-mwhite w-full text-2xl h-16 z-10 font-bold pt-5 flex  flex-col ">
+              <h1 className="bg-mblack text-mwhite w-full text-lg sm:text-2xl h-16 z-10 font-bold pt-5 flex  flex-col ">
                 Produção
               </h1>
               <Card className="w-[280px] h-[200px] flex justify-center flex-col text-center -mt-4">
                 <CardHeader>
                   {/* <CardTitle>Produção</CardTitle> */}
-                  <CardDescription>
+                  <CardDescription className="text-xs sm:text-base">
                     {" "}
                     Contamos com produtores com vasta experiência no ramo de
                     eventos para a montagem e desmontagem de toda a
@@ -126,13 +126,13 @@ const Servicos = () => {
               aria-label="icones dos serviços prestados"
               className="flex flex-col justify-center text-center items-center"
             >
-              <h1 className="bg-mblack text-mwhite w-full text-2xl h-16 z-10 font-bold pt-5 flex  flex-col ">
+              <h1 className="bg-mblack text-mwhite w-full text-lg sm:text-2xl h-16 z-10 font-bold pt-5 flex  flex-col ">
                 Coordenação
               </h1>
               <Card className="w-[280px] h-[200px] flex justify-center flex-col text-center -mt-4">
                 <CardHeader>
                   {/* <CardTitle>Coordenação</CardTitle> */}
-                  <CardDescription>
+                  <CardDescription className="text-xs sm:text-base">
                     Equipes com coordenadores responsáveis para fluir os
                     trabalhos e assim fazer chegar sua carga ou mercadoria de
                     exposição com rapidez e agilidade no seu espaço ou no seu
